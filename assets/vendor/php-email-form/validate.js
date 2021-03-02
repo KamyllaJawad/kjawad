@@ -12,7 +12,7 @@
     
     function alert_confirm()
     {
-      alert("Sua mensagem foi enviada com sucesso!);
+      alert("Sua mensagem foi enviada com sucesso"!);
     }
 
     var f = $(this).find('.form-group'),
