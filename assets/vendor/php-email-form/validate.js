@@ -3,12 +3,18 @@
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
 */
+
 !(function($) {
   "use strict";
 
   $('form.php-email-form').submit(function(e) {
     e.preventDefault();
     
+    function alert_confirm()
+    {
+      alert("Sua mensagem foi enviada com sucesso!);
+    }
+
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
