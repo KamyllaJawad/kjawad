@@ -9,11 +9,6 @@
 
   $('form.php-email-form').submit(function(e) {
     e.preventDefault();
-    
-    function alert_confirm()
-    {
-      alert("Sua mensagem foi enviada com sucesso"!);
-    }
 
     var f = $(this).find('.form-group'),
       ferror = false,
@@ -100,6 +95,7 @@
         i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
+    
     if (ferror) return false;
 
     var this_form = $(this);
@@ -123,6 +119,9 @@
   });
 
   function php_email_form_submit(this_form, action, data) {
+    
+
+
     $.ajax({
       type: "POST",
       url: action,
@@ -130,6 +129,7 @@
       timeout: 40000
     }).done( function(msg){
       if (msg == 'OK') {
+        
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');
