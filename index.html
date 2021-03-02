@@ -700,60 +700,74 @@
         <!-- End Testimonials Section -->
 
         <!-- ======= Contact Section ======= -->
-        <!-- <section id="contact" class="contact">
+        <section id="contact" class="contact">
             <div class="container">
-
+    
                 <div class="section-title">
                     <h2>Contato</h2>
                     <p>Sinta-se a vontade para entrar em contato comigo através deste formulário abaixo:</p>
                 </div>
-
-                <div class="row" data-aos="fade-in"> -->
-
-                    <!-- <div class="col-lg-5 d-flex align-items-stretch">
+    
+                <div class="row" data-aos="fade-in">
+    
+                    <div class="col-lg-5 d-flex align-items-stretch">
                          <div class="info">
                             <div class="address">
                                 <i class="icofont-google-map"></i>
                                 <h4>Location:</h4>
                                 <p>A108 Adam Street, New York, NY 535022</p>
                             </div>
-
+    
                             <div class="email">
                                 <i class="icofont-envelope"></i>
                                 <h4>Email:</h4>
                                 <p>abdel.jawad987@outlook.com</p>
                             </div>
-
+    
                             <div class="phone">
                                 <i class="icofont-phone"></i>
                                 <h4>Call:</h4>
                                 <p>+55 11 95120-3437 || +55 47 99661-2467</p>
-
+    
                             </div> 
                             
                         </div>
-
-                    </div> -->
-
-                    <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+    
+                    </div>
+    
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form id="form" name="form-contact" action="/" method="post" role="form" data-netlify="true" class="php-email-form">
+    
                             <div class="form-row">
+    
                                 <div class="form-group col-md-6">
                                     <label for="name">Nome</label>
                                     <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Coloque ao menos 4 caracteres" />
                                     <div class="validate"></div>
                                 </div>
+    
                                 <div class="form-group col-md-6">
                                     <label for="name">E-mail</label>
                                     <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor informe um e-mail válido!" />
                                     <div class="validate"></div>
                                 </div>
                             </div>
+    
                             <div class="form-group">
                                 <label for="name">Assunto</label>
-                                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Coloque ao menos 8 caracteres" />
+                                    <select class="form-control" id="subject">
+                                        <option>Dúvidas</option>
+                                        <option>Testes</option>
+                                        <option>Suporte Remoto 24h</option>
+                                        <option>Desenvolvimento Web</option>
+                                        <option>Infraestrutura</option>
+                                        <option>Gerenciamento de Servidores</option>
+                                        <option>Segurança da Informação</option>
+                                        <option>Outros</option>
+                                    </select>
                                 <div class="validate"></div>
                             </div>
+    
                             <div class="form-group">
                                 <label for="name">Menssagem</label>
                                 <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Escreva algo para entendermos melhor o que precisa"></textarea>
@@ -763,22 +777,18 @@
                                 <div class="loading">Carregando...</div>
                                 <div class="error-message">Sua mensagem falhou, tente novamente.</div>
                                 <div class="sent-message">Sua mensagem foi enviada. Obrigada!</div> 
-                            </div>-->
-
-                            <!-- <div class = "form-group"> 
-                                <span class = "ms-2">Aceite nossos <a href="terms.html"> termos de serviço </a> e <a href="privacy.html"> política de privacidade </a> </span> 
-                                <input type = "checkbox" name = "privacy" value = "accept" class = "float-left h-auto mt-1" data-rule = "verificado" data-msg = "Aceite nossos termos de serviço e política de privacidade"> 
-                                <div class = "validate"> </div> 
-                            </div> -->
-                            <!-- <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-
+                            </div>
+    
+                            <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+    
                         </form>
+                        
                     </div>
-
+    
                 </div>
-
+    
             </div>
-        </section> -->
+        </section>
         <!-- End Contact Section -->
 
     </main>
